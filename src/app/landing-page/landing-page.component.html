@@ -1,1 +1,328 @@
-<app-btn-primary>Hola</app-btn-primary>
+<div id="landing-container">
+  <app-landing-header></app-landing-header>
+  <section id="home" class="section">
+    <div class="home-content">
+      <div class="content-left">
+        <h1>Your Health, Our Priority</h1>
+        <p class="txt-m-md">
+          Manage your appointments effortlessly and access personalized care
+          anytime, anywhere. Join us in creating a healthier you!
+        </p>
+        <app-btn-primary [onClick]="goToSignup" [size]="buttonSize.large">
+          <span ngProjectAs="btn-text">Get Started Today</span>
+          <svg
+            ngProjectAs="btn-icon-right"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+              fill="#FCFCFC"
+            />
+          </svg>
+        </app-btn-primary>
+      </div>
+      <div class="content-right">
+        <img src="img/banner-doctor.png" alt="Doctor" />
+      </div>
+      <div class="content-bottom">
+        <div class="achievements">
+          <div class="achievement">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+              <rect
+                x="1"
+                y="1"
+                width="54"
+                height="54"
+                rx="27"
+                stroke="#32CFBF"
+                stroke-width="2"
+              />
+              <g clip-path="url(#clip0_38_99)">
+                <path
+                  d="M35.9715 37.9719C35.6529 37.9719 35.3473 38.0985 35.122 38.3238C34.8966 38.5492 34.77 38.8548 34.77 39.1734V43.2187L40.0162 37.9731L35.9715 37.9719Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35.9715 37.9719H40.0168V13.984C40.0168 13.6653 39.8903 13.3597 39.6649 13.1344C39.4396 12.9091 39.134 12.7825 38.8153 12.7825H17.1846C17.0267 12.7824 16.8704 12.8134 16.7246 12.8738C16.5787 12.9341 16.4462 13.0226 16.3346 13.1342C16.2229 13.2458 16.1344 13.3783 16.074 13.5241C16.0135 13.6699 15.9824 13.8262 15.9824 13.984V42.016C15.9824 42.1738 16.0135 42.3301 16.074 42.4759C16.1344 42.6218 16.2229 42.7542 16.3346 42.8658C16.4462 42.9774 16.5787 43.0659 16.7246 43.1262C16.8704 43.1866 17.0267 43.2176 17.1846 43.2175H34.77V39.1722C34.7704 38.8538 34.8971 38.5485 35.1224 38.3234C35.3477 38.0983 35.6531 37.9719 35.9715 37.9719Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.6897 24.1377H30.2676V19.7156H25.7297V24.1377H21.3076V28.6774H25.7297V33.1001H30.2694V28.6774H34.6897V24.1377Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_38_99">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(12 12)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="txt-sb-sm">Certified Excellence in Healthcare</p>
+          </div>
+          <div class="achievement">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+              <rect
+                x="1"
+                y="1"
+                width="54"
+                height="54"
+                rx="27"
+                stroke="#32CFBF"
+                stroke-width="2"
+              />
+              <g clip-path="url(#clip0_38_107)">
+                <path
+                  d="M40.4446 39.5963C40.4446 33.5236 39.6345 28.4705 31.5754 27.3747C31.147 27.9117 30.6032 28.3453 29.9843 28.6433C29.3654 28.9413 28.6873 29.096 28.0004 29.096C27.3135 29.096 26.6354 28.9413 26.0165 28.6433C25.3976 28.3453 24.8538 27.9117 24.4254 27.3747C16.3759 28.4717 15.5562 33.5248 15.5562 39.5963"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M32.9435 19.0461C32.9435 22.5076 30.4901 25.5347 28.005 25.5347C25.5199 25.5347 23.2346 22.504 23.0672 19.0461C22.8997 15.5882 24.9504 12.7778 28.005 12.7778C31.0597 12.7778 32.9435 15.584 32.9435 19.0461Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.2568 33.7114C19.392 35.9133 19.4166 39.265 19.4166 41.5731C22.1475 42.664 25.0612 43.2247 28.002 43.2252C30.9461 43.226 33.8622 42.6534 36.5874 41.5395C36.5874 39.445 36.5694 36.4282 35.9585 34.3326"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5562 39.5963C15.5562 40.0218 17.3607 41.0198 19.397 41.0198"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M40.4448 39.5963C40.4448 40.0218 38.6402 41.0198 36.604 41.0198"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_38_107">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(12 12)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="txt-sb-sm">Over 10,000 Happy Patients</p>
+          </div>
+          <div class="achievement">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+              <rect
+                x="1"
+                y="1"
+                width="54"
+                height="54"
+                rx="27"
+                stroke="#32CFBF"
+                stroke-width="2"
+              />
+              <g clip-path="url(#clip0_38_123)">
+                <path
+                  d="M32.4976 20.3587L35.1372 17.7191L38.3454 20.9273L35.7058 23.5669"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M24.1739 35.2092L21.4907 37.8929C21.384 37.9993 21.2395 38.0591 21.0888 38.0591C20.9381 38.0591 20.7936 37.9993 20.6869 37.8929L18.1714 35.3775C18.0651 35.2709 18.0054 35.1264 18.0054 34.9759C18.0054 34.8253 18.0651 34.6809 18.1714 34.5743L20.8552 31.8905"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M19.2113 36.8539L13.2563 42.8089"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M31.239 19.1L36.9646 24.8256C37.2068 25.0681 37.3429 25.3968 37.3429 25.7396C37.3429 26.0824 37.2068 26.4111 36.9646 26.6536L27.1158 36.5023C26.9959 36.6224 26.8534 36.7177 26.6965 36.7827C26.5397 36.8477 26.3716 36.8812 26.2019 36.8812C26.0321 36.8812 25.864 36.8477 25.7072 36.7827C25.5503 36.7177 25.4079 36.6224 25.2879 36.5023L19.5623 30.7774C19.3198 30.5349 19.1836 30.206 19.1836 29.8631C19.1836 29.5201 19.3198 29.1913 19.5623 28.9488L29.4084 19.1C29.5285 18.9796 29.6711 18.884 29.8282 18.8188C29.9853 18.7536 30.1536 18.7201 30.3237 18.7201C30.4937 18.7201 30.6621 18.7536 30.8192 18.8188C30.9763 18.884 31.1189 18.9796 31.239 19.1Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M35.9762 13.3503L42.7149 20.089C42.8349 20.2091 42.9301 20.3515 42.9951 20.5084C43.0601 20.6652 43.0935 20.8333 43.0935 21.003C43.0935 21.1728 43.0601 21.3408 42.9951 21.4977C42.9301 21.6545 42.8349 21.797 42.7149 21.917L41.8954 22.7364C41.7755 22.8565 41.633 22.9518 41.4762 23.0168C41.3194 23.0818 41.1512 23.1153 40.9815 23.1153C40.8117 23.1153 40.6436 23.0818 40.4868 23.0168C40.33 22.9518 40.1875 22.8565 40.0675 22.7364L33.3288 15.9977C33.2088 15.8777 33.1136 15.7352 33.0486 15.5784C32.9836 15.4216 32.9502 15.2535 32.9502 15.0838C32.9502 14.914 32.9836 14.7459 33.0486 14.5891C33.1136 14.4323 33.2088 14.2898 33.3288 14.1698L34.1482 13.351C34.2682 13.2309 34.4107 13.1356 34.5675 13.0706C34.7243 13.0056 34.8923 12.9721 35.0621 12.9721C35.2318 12.972 35.3999 13.0054 35.5568 13.0703C35.7136 13.1352 35.8561 13.2304 35.9762 13.3503Z"
+                  stroke="#119087"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_38_123">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(12 12)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="txt-sb-sm">Leaders in Digital Health Solutions</p>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="circle-1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="154"
+        height="154"
+        viewBox="0 0 154 154"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_44_44)">
+          <circle cx="77" cy="77" r="57" fill="#9CF3E4" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_44"
+            x="0"
+            y="0"
+            width="154"
+            height="154"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_44"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="circle-2"
+        xmlns="http://www.w3.org/2000/svg"
+        width="146"
+        height="146"
+        viewBox="0 0 146 146"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_44_43)">
+          <circle cx="73" cy="73" r="53" fill="#CEF9F1" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_43"
+            x="0"
+            y="0"
+            width="146"
+            height="146"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_43"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="circle-3"
+        xmlns="http://www.w3.org/2000/svg"
+        width="197"
+        height="197"
+        viewBox="0 0 197 197"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_44_41)">
+          <circle cx="98.5" cy="98.5" r="78.5" fill="#9CF3E4" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_41"
+            x="0"
+            y="0"
+            width="197"
+            height="197"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_41"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </section>
+</div>
