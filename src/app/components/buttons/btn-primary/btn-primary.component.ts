@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-btn-primary',
   standalone: true,
   imports: [],
   templateUrl: './btn-primary.component.html',
-  styleUrl: './btn-primary.component.css'
+  styleUrl: './btn-primary.component.css',
 })
 export class BtnPrimaryComponent {
-
+  @Input() isContrast = false;
+  @Input({ required: true }) onClick: any;
 }
