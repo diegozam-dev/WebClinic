@@ -1,0 +1,42 @@
+.landing-header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+#landing-header {
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1080px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu, .menu {
+  display: flex;
+}
+
+.header-menu {
+  gap: 32px;
+}
+
+.menu {
+  align-items: center;
+  gap: 24px;
+}
+
+.menu-item a {
+  color: var(--txt-very-low);
+  transition: all .2s ease;
+
+}
+
+.menu-item a:hover {
+  color: var(--txt-primary);
+}
