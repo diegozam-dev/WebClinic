@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BtnPrimaryComponent {
   @Input() isContrast = false;
+  @Input() size = 'MEDIUM';
   @Input({ required: true }) onClick: any;
 }

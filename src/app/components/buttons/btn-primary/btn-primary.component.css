@@ -1,7 +1,6 @@
 button {
   font-family: 'Open Sans Variable', sans-serif;
   color: var(--txt-contrast);
-  padding: 8px 16px;
   background-color: var(--btn-primary-bg);
   border-radius: 8px;
   display: flex;
@@ -22,4 +21,12 @@ button:hover {
 
 .btn-primary-contrast:hover {
   background-color: var(--btn-primary-contrast-hover);
+}
+
+.btn-md {
+  padding: 8px 16px;
+}
+
+.btn-lg {
+  padding: 12px 24px;
 }

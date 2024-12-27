@@ -2,6 +2,8 @@
   (click)="onClick()"
   [class.btn-primary]="!isContrast"
   [class.btn-primary-contrast]="isContrast"
+  [class.btn-md]="size == 'MEDIUM'"
+  [class.btn-lg]="size == 'LARGE'"
   class="txt-sb-xs"
 >
   <ng-content select="btn-icon-left"/>
