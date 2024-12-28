@@ -56,6 +56,7 @@
     position: absolute;
     bottom: -12%;
     left: 0;
+    padding: 0 24px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +79,7 @@
   }
 
   & .achievements .achievement {
-    width: auto;
+    width: 100%;
     max-width: 240px;
     display: flex;
     flex-direction: column;
@@ -101,14 +102,91 @@
   & .circle-2 {
     position: absolute;
     top: 58%;
-    left: 54%;
+    left: calc(100vw - 500px);
     z-index: 30;
   }
 
   & .circle-3 {
     position: absolute;
     top: 16%;
-    left: 80%;
+    left: calc(100vw - 220px);
     z-index: 30;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .home-content {
+    & .content-right {
+      min-width: 370px;
+      width: 100%;
+      max-width: 416px;
+    }
+
+    & .circle-3 {
+      left: calc(100vw - 225px);
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  #home {
+    height: auto;
+  }
+
+  .home-content {
+    padding: 170px 24px;
+    flex-direction: column;
+
+    & .content-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & .content-left h1,
+    .content-left p {
+      max-width: 500px;
+    }
+
+    & .content-right {
+      min-width: auto;
+      width: 100%;
+      max-width: 416px;
+    }
+
+    & .content-bottom {
+      bottom: -100px;
+    }
+
+    & .circle-1 {
+      top: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #home {
+    background: linear-gradient(90deg, #cef9f1 -5.28%, #f0fdfa 45.84%);
+  }
+
+  .home-content {
+    & .content-bottom {
+      bottom: -240px;
+    }
+
+    & .achievements {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .home-content {
+    & .content-bottom {
+      bottom: -360px;
+    }
   }
 }
