@@ -1,4 +1,4 @@
-<div class="landing-header-container">
+<div class="landing-header-container" (window:resize)="onResize($event.target.innerWidth)">
   <nav id="landing-header">
     <a class="logo" href="/">
       <svg
@@ -83,7 +83,7 @@
         />
       </svg>
     </a>
-    <div class="header-menu">
+    <div class="header-menu" [class.menu-open]="isMenuOpen()">
       <ul class="menu txt-sb-xs">
         <li class="menu-item">
           <a href="#home">Home</a>
@@ -99,5 +99,33 @@
         <span ngProjectAs="btn-text">Log in</span>
       </app-btn-primary>
     </div>
+    <button (click)="changeMenuState()" class="btn-menu">
+      <svg
+        *ngIf="!isMenuOpen()"
+        width="28"
+        height="22"
+        viewBox="0 0 18 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z"
+          fill="#119087"
+        />
+      </svg>
+      <svg
+        *ngIf="isMenuOpen()"
+        width="28"
+        height="22"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+          fill="#119087"
+        />
+      </svg>
+    </button>
   </nav>
 </div>
