@@ -5,7 +5,7 @@
 
   /* Primary */
   --primary-50: rgba(240, 253, 250, 1);
-  --primary-100: #cef9f1;
+  --primary-100: rgb(206, 249, 241);
   --primary-200: rgba(156, 243, 228, 1);
   --primary-300: rgba(99, 229, 212, 1);
   --primary-400: rgba(50, 207, 191, 1);
@@ -65,6 +65,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--surface-primary);
 }
@@ -89,7 +93,7 @@ h3 {
   font-size: 28px;
 }
 
-h2 {
+h4 {
   font-size: 20px;
 }
 
