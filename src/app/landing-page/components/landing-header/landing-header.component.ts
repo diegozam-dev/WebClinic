@@ -26,6 +26,10 @@ export class LandingHeaderComponent {
 
   public onResize(eventObject: any) {
     const currentWindowWidth = eventObject.target.innerWidth;
-    if (currentWindowWidth > 768) this.isMenuOpen.set(false);
+    if (currentWindowWidth > 768) this.closeMenu();
+  }
+
+  public closeMenu() {
+    this.isMenuOpen.set(false);
   }
 }

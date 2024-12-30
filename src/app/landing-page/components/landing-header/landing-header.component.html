@@ -1,6 +1,6 @@
 <div class="landing-header-container" (window:resize)="onResize($event)">
   <nav id="landing-header">
-    <a class="logo" href="/">
+    <a (click)="closeMenu()" class="logo" href="/">
       <svg
         width="113"
         height="41"
@@ -86,13 +86,13 @@
     <div class="header-menu" [class.menu-open]="isMenuOpen()">
       <ul class="menu txt-sb-xs">
         <li class="menu-item">
-          <a href="#home">Home</a>
+          <a (click)="closeMenu()" href="#home">Home</a>
         </li>
         <li class="menu-item">
-          <a href="#services">Services</a>
+          <a (click)="closeMenu()" href="#services">Services</a>
         </li>
         <li class="menu-item">
-          <a href="#opinions">Opinions</a>
+          <a (click)="closeMenu()" href="#opinions">Opinions</a>
         </li>
       </ul>
       <app-btn-primary [onClick]="goToLogin">
