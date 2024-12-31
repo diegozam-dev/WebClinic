@@ -1,22 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from '../components/buttons/btn-primary/btn-primary.component';
-import { LandingHeaderComponent } from './components';
 import { Router } from '@angular/router';
 import { ButtonSize } from '../enums/buttonSize.enum';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [BtnPrimaryComponent, LandingHeaderComponent],
+  imports: [BtnPrimaryComponent, CommonModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent {
-  public buttonSize = ButtonSize;
+  buttonSize = ButtonSize;
+  isMenuOpen = signal(false);
 
   constructor(private router: Router) {}
 
   public goToSignup(): void {
-    this.router.navigate(['/signup']);
+    // this.router.navigate(['/signup']);
+    console.log('Holaaaa');
+  }
+
+  public goToLogin(): any {
+    // this.router.navigate(['/login']);
+    console.log('Holaaaa');
+  }
+
+  public changeMenuState(): void {
+    this.isMenuOpen.set(!this.isMenuOpen());
+  }
+
+  public onResize(eventObject: any) {
+    const currentWindowWidth = eventObject.target.innerWidth;
+    console.log(currentWindowWidth);
+    if (currentWindowWidth > 768) this.closeMenu();
+  }
+
+  public closeMenu() {
+    this.isMenuOpen.set(false);
   }
 }
