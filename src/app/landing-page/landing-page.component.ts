@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 export class LandingPageComponent {
   buttonSize = ButtonSize;
   isMenuOpen = signal(false);
+  currentYear = new Date().getFullYear();
 
   constructor(private router: Router) {}
 
