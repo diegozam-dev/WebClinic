@@ -1,7 +1,7 @@
 <div id="landing-container">
-  <div class="landing-header-container" (window:resize)="onResize($event)">
-    <nav id="landing-header">
-      <a (click)="closeMenu()" class="logo" href="#home">
+  <nav id="landing-header" (window:resize)="onResize($event)">
+    <div class="landing-header-container">
+      <a (click)="closeMenu()" class="header-logo" href="#home">
         <svg
           width="113"
           height="41"
@@ -128,10 +128,10 @@
           />
         </svg>
       </button>
-    </nav>
-  </div>
-  <div class="home-container">
-    <section id="home" class="section">
+    </div>
+  </nav>
+  <section id="home">
+    <div class="home-container section">
       <div class="home-content">
         <div class="content-left">
           <h1>Your Health, Our Priority</h1>
@@ -169,7 +169,14 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+                <rect
+                  x="1"
+                  y="1"
+                  width="54"
+                  height="54"
+                  rx="27"
+                  fill="#F0FDFA"
+                />
                 <rect
                   x="1"
                   y="1"
@@ -223,7 +230,14 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+                <rect
+                  x="1"
+                  y="1"
+                  width="54"
+                  height="54"
+                  rx="27"
+                  fill="#F0FDFA"
+                />
                 <rect
                   x="1"
                   y="1"
@@ -291,7 +305,14 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="1" y="1" width="54" height="54" rx="27" fill="#F0FDFA" />
+                <rect
+                  x="1"
+                  y="1"
+                  width="54"
+                  height="54"
+                  rx="27"
+                  fill="#F0FDFA"
+                />
                 <rect
                   x="1"
                   y="1"
@@ -455,77 +476,300 @@
           </defs>
         </svg>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
   <section id="services" class="section">
     <h2>Services</h2>
     <main class="services-content">
       <article class="service">
         <div class="img-container">
-          <img src="img/cardiology.jpg" alt="Cardiology">
+          <img src="img/cardiology.jpg" alt="Cardiology" />
         </div>
         <main class="service-info">
           <h4>Cardiology</h4>
           <p class="service-description txt-m-sm">
-            Advanced heart care services, including diagnostics, treatment, and management of cardiovascular diseases.
+            Advanced heart care services, including diagnostics, treatment, and
+            management of cardiovascular diseases.
           </p>
         </main>
       </article>
       <article class="service">
         <div class="img-container">
-          <img src="img/dermatology.jpg" alt="Dermatology">
+          <img src="img/dermatology.jpg" alt="Dermatology" />
         </div>
         <main class="service-info">
           <h4>Dermatology</h4>
           <p class="service-description txt-m-sm">
-            Expert care for skin, hair, and nail conditions, providing treatments for both cosmetic and medical needs.
+            Expert care for skin, hair, and nail conditions, providing
+            treatments for both cosmetic and medical needs.
           </p>
         </main>
       </article>
       <article class="service">
         <div class="img-container">
-          <img src="img/pediatrics.jpg" alt="Pediatrics">
+          <img src="img/pediatrics.jpg" alt="Pediatrics" />
         </div>
         <main class="service-info">
           <h4>Pediatrics</h4>
           <p class="service-description txt-m-sm">
-            Comprehensive health services for children, ensuring their well-being from infancy through adolescence.
+            Comprehensive health services for children, ensuring their
+            well-being from infancy through adolescence.
           </p>
         </main>
       </article>
       <article class="service">
         <div class="img-container">
-          <img src="img/orthopedics.jpg" alt="Orthopedics">
+          <img src="img/orthopedics.jpg" alt="Orthopedics" />
         </div>
         <main class="service-info">
           <h4>Orthopedics</h4>
           <p class="service-description txt-m-sm">
-            Diagnosis and treatment of bone, joint, and muscle conditions, from injuries to chronic disorders.
+            Diagnosis and treatment of bone, joint, and muscle conditions, from
+            injuries to chronic disorders.
           </p>
         </main>
       </article>
       <article class="service">
         <div class="img-container">
-          <img src="img/neurology.jpg" alt="Neurology">
+          <img src="img/neurology.jpg" alt="Neurology" />
         </div>
         <main class="service-info">
           <h4>Neurology</h4>
           <p class="service-description txt-m-sm">
-            Expert evaluation and treatment of brain, nerve, and spinal cord conditions for improved quality of life.
+            Expert evaluation and treatment of brain, nerve, and spinal cord
+            conditions for improved quality of life.
           </p>
         </main>
       </article>
       <article class="service">
         <div class="img-container">
-          <img src="img/psychiatry.jpg" alt="Psychiatry">
+          <img src="img/psychiatry.jpg" alt="Psychiatry" />
         </div>
         <main class="service-info">
           <h4>Psychiatry</h4>
           <p class="service-description txt-m-sm">
-            Compassionate mental health services, including therapy and treatment for emotional and psychological well-being.
+            Compassionate mental health services, including therapy and
+            treatment for emotional and psychological well-being.
           </p>
         </main>
       </article>
     </main>
+  </section>
+  <section id="opinions">
+    <div class="opinions-container section">
+      <h2>Opinions</h2>
+      <main class="opinions-content">
+        <article class="opinion">
+          <h4>Emma Roberts</h4>
+          <p class="txt-m-sm">
+            "Great service and friendly staff! The doctors were very
+            professional!"
+          </p>
+          <svg
+            width="116"
+            height="20"
+            viewBox="0 0 116 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.0001 14.3916L15.1501 17.5L13.7834 11.6416L18.3334 7.69996L12.3417 7.19163L10.0001 1.66663L7.65841 7.19163L1.66675 7.69996L6.21675 11.6416L4.85008 17.5L10.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M58.0001 14.3916L63.1501 17.5L61.7834 11.6416L66.3334 7.69996L60.3417 7.19163L58.0001 1.66663L55.6584 7.19163L49.6667 7.69996L54.2167 11.6416L52.8501 17.5L58.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M34.0001 14.3916L39.1501 17.5L37.7834 11.6416L42.3334 7.69996L36.3417 7.19163L34.0001 1.66663L31.6584 7.19163L25.6667 7.69996L30.2167 11.6416L28.8501 17.5L34.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M81.9998 14.3916L87.1498 17.5L85.7832 11.6416L90.3332 7.69996L84.3415 7.19163L81.9998 1.66663L79.6582 7.19163L73.6665 7.69996L78.2165 11.6416L76.8498 17.5L81.9998 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M106 14.3916L111.15 17.5L109.783 11.6416L114.333 7.69996L108.342 7.19163L106 1.66663L103.658 7.19163L97.6665 7.69996L102.217 11.6416L100.85 17.5L106 14.3916Z"
+              fill="#F4DC0A"
+            />
+          </svg>
+        </article>
+        <article class="opinion">
+          <h4>Michael Johnson</h4>
+          <p class="txt-m-sm">
+            "Clean clinic with excellent specialists. Booking an appointment was
+            so easy!"
+          </p>
+          <svg
+            width="116"
+            height="20"
+            viewBox="0 0 116 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.0001 14.3916L15.1501 17.5L13.7834 11.6416L18.3334 7.69996L12.3417 7.19163L10.0001 1.66663L7.65841 7.19163L1.66675 7.69996L6.21675 11.6416L4.85008 17.5L10.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M58.0001 14.3916L63.1501 17.5L61.7834 11.6416L66.3334 7.69996L60.3417 7.19163L58.0001 1.66663L55.6584 7.19163L49.6667 7.69996L54.2167 11.6416L52.8501 17.5L58.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M34.0001 14.3916L39.1501 17.5L37.7834 11.6416L42.3334 7.69996L36.3417 7.19163L34.0001 1.66663L31.6584 7.19163L25.6667 7.69996L30.2167 11.6416L28.8501 17.5L34.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M81.9998 14.3916L87.1498 17.5L85.7832 11.6416L90.3332 7.69996L84.3415 7.19163L81.9998 1.66663L79.6582 7.19163L73.6665 7.69996L78.2165 11.6416L76.8498 17.5L81.9998 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M106 14.3916L111.15 17.5L109.783 11.6416L114.333 7.69996L108.342 7.19163L106 1.66663L103.658 7.19163L97.6665 7.69996L102.217 11.6416L100.85 17.5L106 14.3916Z"
+              fill="#F4DC0A"
+            />
+          </svg>
+        </article>
+        <article class="opinion">
+          <h4>Sophia Martinez</h4>
+          <p class="txt-m-sm">
+            "Amazing experience! The treatment was effective, and the staff was
+            kind."
+          </p>
+          <svg
+            width="116"
+            height="20"
+            viewBox="0 0 116 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.0001 14.3916L15.1501 17.5L13.7834 11.6416L18.3334 7.69996L12.3417 7.19163L10.0001 1.66663L7.65841 7.19163L1.66675 7.69996L6.21675 11.6416L4.85008 17.5L10.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M58.0001 14.3916L63.1501 17.5L61.7834 11.6416L66.3334 7.69996L60.3417 7.19163L58.0001 1.66663L55.6584 7.19163L49.6667 7.69996L54.2167 11.6416L52.8501 17.5L58.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M34.0001 14.3916L39.1501 17.5L37.7834 11.6416L42.3334 7.69996L36.3417 7.19163L34.0001 1.66663L31.6584 7.19163L25.6667 7.69996L30.2167 11.6416L28.8501 17.5L34.0001 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M81.9998 14.3916L87.1498 17.5L85.7832 11.6416L90.3332 7.69996L84.3415 7.19163L81.9998 1.66663L79.6582 7.19163L73.6665 7.69996L78.2165 11.6416L76.8498 17.5L81.9998 14.3916Z"
+              fill="#F4DC0A"
+            />
+            <path
+              d="M106 14.3916L111.15 17.5L109.783 11.6416L114.333 7.69996L108.342 7.19163L106 1.66663L103.658 7.19163L97.6665 7.69996L102.217 11.6416L100.85 17.5L106 14.3916Z"
+              fill="#F4DC0A"
+            />
+          </svg>
+        </article>
+      </main>
+      <svg
+        class="circle-1"
+        width="224"
+        height="224"
+        viewBox="0 0 224 224"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_f_44_34)">
+          <circle cx="117.5" cy="110.5" r="97.5" fill="#9CF3E4" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_34"
+            x="0"
+            y="-7"
+            width="235"
+            height="235"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_34"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="circle-2"
+        xmlns="http://www.w3.org/2000/svg"
+        width="211"
+        height="156"
+        viewBox="0 0 211 156"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_44_35)">
+          <circle cx="105.5" cy="105.5" r="85.5" fill="#9CF3E4" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_35"
+            x="0"
+            y="0"
+            width="211"
+            height="211"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_35"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <svg
+        class="circle-3"
+        xmlns="http://www.w3.org/2000/svg"
+        width="168"
+        height="168"
+        viewBox="0 0 168 168"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_44_31)">
+          <circle cx="84" cy="84" r="64" fill="#CEF9F1" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_44_31"
+            x="0"
+            y="0"
+            width="168"
+            height="168"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="10"
+              result="effect1_foregroundBlur_44_31"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </div>
   </section>
 </div>

@@ -43,6 +43,7 @@
 
   /* Surface */
   --surface-primary: var(--white);
+  --surface-brand-low: var(--primary-50);
 
   /* Border */
   --border-primary: var(--primary-600);

@@ -33,7 +33,6 @@ export class LandingPageComponent {
 
   public onResize(eventObject: any) {
     const currentWindowWidth = eventObject.target.innerWidth;
-    console.log(currentWindowWidth);
     if (currentWindowWidth > 768) this.closeMenu();
   }
 
