@@ -50,10 +50,10 @@
   --border-primary: var(--primary-600);
 
   /* Button Primary */
-  --btn-primary-bg: var(--primary-600);
+  --btn-primary: var(--primary-600);
   --btn-primary-txt: var(--txt-contrast);
   --btn-primary-hover: var(--primary-700);
-  --btn-primary-contrast-bg: var(--white);
+  --btn-primary-contrast: var(--white);
   --btn-primary-contrast-txt: var(--txt-brand);
   --btn-primary-contrast-hover: var(--primary-100);
 }

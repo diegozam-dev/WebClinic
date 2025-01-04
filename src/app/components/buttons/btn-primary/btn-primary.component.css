@@ -1,26 +1,26 @@
 button {
   font-family: 'Open Sans Variable', sans-serif;
   color: var(--txt-contrast);
-  background-color: var(--btn-primary-bg);
+  background-color: var(--btn-primary);
   border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
   transition: all .2s ease;
-}
 
-button:hover {
-  background-color: var(--btn-primary-hover);
+  &:hover {
+    background-color: var(--btn-primary-hover);
+  }
 }
 
 .btn-primary-contrast {
-  background-color: var(--btn-primary-contrast-bg);
+  background-color: var(--btn-primary-contrast);
   color: var(--txt-brand);
-}
 
-.btn-primary-contrast:hover {
-  background-color: var(--btn-primary-contrast-hover);
+  &:hover {
+    background-color: var(--btn-primary-contrast-hover);
+  }
 }
 
 .btn-md {
@@ -29,4 +29,26 @@ button:hover {
 
 .btn-lg {
   padding: 12px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    &:hover {
+      background-color: var(--btn-primary);
+    }
+
+    &:active {
+      background-color: var(--btn-primary-hover);
+    }
+  }
+
+  .btn-primary-contrast {
+    &:hover {
+      background-color: var(--btn-primary-contrast);
+    }
+
+    &:active {
+      background-color: var(--btn-primary-contrast-hover);
+    }
+  }
 }

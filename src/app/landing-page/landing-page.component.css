@@ -430,7 +430,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
   .home-content {
     & .content-right {
       min-width: 370px;
@@ -440,7 +440,7 @@
   }
 }
 
-@media (max-width: 875px) {
+@media screen and (max-width: 875px) {
   .home-container {
     height: auto;
   }
@@ -478,7 +478,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header-container {
     & .header-menu {
       position: absolute;
@@ -596,7 +596,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .home-container {
     background: linear-gradient(90deg, #cef9f1 -5.28%, #f0fdfa 45.84%);
   }
@@ -640,7 +640,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #opinions {
     & .opinions-container {
       & .opinions-content {
@@ -652,7 +652,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   #services .services-content {
     grid-template-columns: repeat(1, 1fr);
   }
