@@ -100,7 +100,7 @@
           <span ngProjectAs="btn-text">Log in</span>
         </app-btn-primary>
       </div>
-      <button (click)="changeMenuState()" class="btn-menu">
+      <button (click)="onClickBtnMenu()" class="btn-menu">
         <svg
           *ngIf="!isMenuOpen()"
           width="28"
@@ -804,7 +804,7 @@
   </section>
   <footer id="landing-footer">
     <div class="footer-container section">
-      <header class="footer-header">
+      <div class="footer-header">
         <a href="#home">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -891,8 +891,8 @@
             />
           </svg>
         </a>
-      </header>
-      <main class="footer-content">
+      </div>
+      <div class="footer-content">
         <div class="content-left">
           <div class="info-container">
             <p class="info-title txt-sb-sm">Visit Us:</p>
@@ -965,11 +965,11 @@
             </li>
           </ul>
         </div>
-      </main>
+      </div>
       <div class="separator"></div>
-      <footer>
+      <div class="footer-copyright">
         <p class="txt-m-sm">©{{currentYear}}. WebClinic.</p>
-      </footer>
+      </div>
     </div>
   </footer>
 </div>

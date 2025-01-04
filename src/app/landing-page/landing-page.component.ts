@@ -12,9 +12,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent {
-  buttonSize = ButtonSize;
   isMenuOpen = signal(false);
   currentYear = new Date().getFullYear();
+
+  buttonSize = ButtonSize;
 
   constructor(private router: Router) {}
 
@@ -28,7 +29,7 @@ export class LandingPageComponent {
     console.log('Holaaaa');
   }
 
-  public changeMenuState(): void {
+  public onClickBtnMenu(): void {
     this.isMenuOpen.set(!this.isMenuOpen());
   }
 
