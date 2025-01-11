@@ -2,12 +2,11 @@ import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from '../components/buttons/btn-primary/btn-primary.component';
 import { Router } from '@angular/router';
 import { ButtonSizes } from '../enums/buttonSizes.enum';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [BtnPrimaryComponent, CommonModule],
+  imports: [BtnPrimaryComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })

@@ -101,21 +101,8 @@
         </app-btn-primary>
       </div>
       <button (click)="onClickBtnMenu()" class="btn-menu">
+        @if (isMenuOpen()) {
         <svg
-          *ngIf="!isMenuOpen()"
-          width="28"
-          height="22"
-          viewBox="0 0 18 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z"
-            fill="#119087"
-          />
-        </svg>
-        <svg
-          *ngIf="isMenuOpen()"
           width="28"
           height="22"
           viewBox="0 0 14 14"
@@ -127,6 +114,20 @@
             fill="#119087"
           />
         </svg>
+        } @else {
+        <svg
+          width="28"
+          height="22"
+          viewBox="0 0 18 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z"
+            fill="#119087"
+          />
+        </svg>
+        }
       </button>
     </div>
   </nav>
@@ -968,7 +969,7 @@
       </div>
       <div class="separator"></div>
       <div class="footer-copyright">
-        <p class="txt-m-sm">©{{currentYear}}. WebClinic.</p>
+        <p class="txt-m-sm">©{{ currentYear }}. WebClinic.</p>
       </div>
     </div>
   </footer>
