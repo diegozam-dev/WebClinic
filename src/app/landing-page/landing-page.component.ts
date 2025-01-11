@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from '../components/buttons/btn-primary/btn-primary.component';
 import { Router } from '@angular/router';
-import { ButtonSize } from '../enums/buttonSize.enum';
+import { ButtonSizes } from '../enums/buttonSizes.enum';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -15,7 +15,7 @@ export class LandingPageComponent {
   isMenuOpen = signal(false);
   currentYear = new Date().getFullYear();
 
-  buttonSize = ButtonSize;
+  buttonSizes = ButtonSizes;
 
   constructor(private router: Router) {}
 
