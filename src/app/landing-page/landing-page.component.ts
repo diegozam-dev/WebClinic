@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { BtnPrimaryComponent } from '../components/buttons/btn-primary/btn-primary.component';
-import { BtnIconComponent } from '../components/buttons/btn-icon/btn-icon.component';
+import { BtnPrimaryComponent, BtnIconComponent } from '../components';
 import { Router } from '@angular/router';
 import { ButtonSizes } from '../enums/buttonSizes.enum';
 
