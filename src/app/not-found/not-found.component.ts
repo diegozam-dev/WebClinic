@@ -10,7 +10,7 @@ import { ButtonSizes } from '../enums/buttonSizes.enum';
   templateUrl: './not-found.component.html',
   styleUrl: './not-found.component.css',
 })
-export class NotFoundComponent {
+export default class NotFoundComponent {
   buttonSizes = ButtonSizes;
 
   constructor(private location: Location) {}
