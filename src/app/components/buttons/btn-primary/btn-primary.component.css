@@ -24,21 +24,21 @@ button {
 }
 
 .btn-sm {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0 8px;
-  height: 40px;
+  padding: 0 12px;
+  height: 36px;
 }
 
 .btn-md {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0 16px;
   height: 40px;
 }
 
 .btn-lg {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0 24px;
   height: 48px;
