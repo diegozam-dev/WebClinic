@@ -1,0 +1,26 @@
+<div class="not-found-container">
+  <div class="img-container">
+    <img src="img/404.png" alt="404" />
+  </div>
+  <p class="message txt-sb-sm">
+    Oops! We couldn't find the page you're looking for. You can go back to the
+    previous page.
+  </p>
+  <app-btn-primary [onClick]="goBack" [size]="buttonSizes.large">
+    <svg
+      ngProjectAs="btn-icon-left"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"
+        fill="currentColor"
+      />
+    </svg>
+
+    <span ngProjectAs="btn-text">Go back</span>
+  </app-btn-primary>
+</div>
