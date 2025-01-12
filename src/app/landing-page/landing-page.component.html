@@ -100,9 +100,10 @@
           <span ngProjectAs="btn-text">Log in</span>
         </app-btn-primary>
       </div>
-      <button (click)="onClickBtnMenu()" class="btn-menu">
+      <app-btn-icon [onClick]="onClickBtnMenu" class="btn-menu">
         @if (isMenuOpen()) {
         <svg
+          ngProjectAs="btn-icon"
           width="28"
           height="22"
           viewBox="0 0 14 14"
@@ -116,6 +117,7 @@
         </svg>
         } @else {
         <svg
+          ngProjectAs="btn-icon"
           width="28"
           height="22"
           viewBox="0 0 18 12"
@@ -128,7 +130,7 @@
           />
         </svg>
         }
-      </button>
+      </app-btn-icon>
     </div>
   </nav>
   <section id="home">

@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from '../components/buttons/btn-primary/btn-primary.component';
+import { BtnIconComponent } from '../components/buttons/btn-icon/btn-icon.component';
 import { Router } from '@angular/router';
 import { ButtonSizes } from '../enums/buttonSizes.enum';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [BtnPrimaryComponent],
+  imports: [BtnPrimaryComponent, BtnIconComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
@@ -28,9 +29,9 @@ export class LandingPageComponent {
     console.log('Holaaaa');
   }
 
-  public onClickBtnMenu(): void {
+  public onClickBtnMenu = (): void => {
     this.isMenuOpen.set(!this.isMenuOpen());
-  }
+  };
 
   public onResize(eventObject: any) {
     const currentWindowWidth = eventObject.target.innerWidth;

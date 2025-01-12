@@ -23,12 +23,25 @@ button {
   }
 }
 
+.btn-sm {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  height: 40px;
+}
+
 .btn-md {
-  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 16px;
+  height: 40px;
 }
 
 .btn-lg {
-  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 24px;
+  height: 48px;
 }
 
 @media screen and (max-width: 768px) {
