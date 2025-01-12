@@ -1,0 +1,8 @@
+<button
+  (click)="onClick()"
+  [class.btn-sm]="size == 'SMALL'"
+  [class.btn-md]="size == 'MEDIUM'"
+  [class.btn-lg]="size == 'LARGE'"
+>
+  <ng-content select="btn-icon" />
+</button>

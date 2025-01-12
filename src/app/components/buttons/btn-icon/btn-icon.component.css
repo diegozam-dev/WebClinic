@@ -1,0 +1,42 @@
+button {
+  font-family: 'Open Sans Variable', sans-serif;
+  color: var(--txt-contrast);
+  background-color: transparent;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease;
+
+  &:hover {
+    background-color: var(--btn-icon-hover);
+  }
+}
+
+.btn-sm {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-md {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-lg {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: var(--btn-icon-hover);
+    }
+  }
+}
