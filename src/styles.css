@@ -100,7 +100,7 @@ h4 {
   font-size: 20px;
 }
 
-p, span, a {
+p, span, a, label, input {
   font-family: 'Open Sans Variable', sans-serif;
 }
 
